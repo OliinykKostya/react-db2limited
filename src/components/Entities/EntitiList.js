@@ -9,7 +9,6 @@ const SpeciesList = ({ data }) => {
     <ul class="list-group">
       {data && data.map(item => (
         <>
-          {console.log(item)}
           <li class="list-group-item" onClick={() => {
 
             console.log(item)
