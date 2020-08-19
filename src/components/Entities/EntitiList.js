@@ -13,7 +13,6 @@ const SpeciesList = ({ data }) => {
             history.push({
               pathname: `${location.pathname}/details`,
               search: `query=${encodeURIComponent(item.url.replace("http", "https"))}`,
-              // search: `query=${item.url}`,
             });
           }}>{ item[location.pathname === "/films" ? "title": "name"]
             }</li>

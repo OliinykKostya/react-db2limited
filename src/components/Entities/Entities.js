@@ -10,7 +10,7 @@ const Character = ({ item, type} ) => {
 
   useEffect(() => {
     setLoading(true)
-    getDataFromSrver(item)
+    getDataFromSrver(item && item.replace("http", "https"))
       .then(data => setData(data))
       setLoading(false)
   }, [])
@@ -28,7 +28,7 @@ const Character = ({ item, type} ) => {
       <li className="list-group-item" onClick={()=> {
         history.push({
           pathname: `/${type}/details`,
-          search: `query=${encodeURIComponent(data.url)}`,
+          search: `query=${encodeURIComponent(data.url.replace("http", "https"))}`,
         })
       }}>{ data[type === "films" ? "title" : "name"]
       }</li>
