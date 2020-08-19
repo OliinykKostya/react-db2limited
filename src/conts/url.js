@@ -1,4 +1,4 @@
-export const URL = "http://swapi.dev/api/"
+export const URL = "https://swapi.dev/api/"
 export const filmsURL = "films/?format=json"
 export const charactersURL = "people/?format=json"
 export const planetsURL = "planets/?format=json"
