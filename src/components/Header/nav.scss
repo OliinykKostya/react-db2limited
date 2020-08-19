@@ -1,0 +1,17 @@
+.nav {
+  margin: 0 20px 0 20px;
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    color: #89939a;
+    text-decoration: none;
+    cursor: pointer;
+
+    &--active {
+      color: #313237;
+    }
+  }
+
+
+}

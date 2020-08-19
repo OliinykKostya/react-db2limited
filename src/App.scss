@@ -1,0 +1,24 @@
+@import "../src/components/Header/nav.scss";
+@import "../src/components/Header/header.scss";
+@import "../src/components/reset.scss";
+
+
+.list-group {
+  &-item {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: #007bff;
+
+    &:hover {
+      color:rgb(29, 104, 185);
+    }
+  }
+  
+}
+
+.p__alight-center {
+  // display: flex;
+  text-align: center;
+
+}
