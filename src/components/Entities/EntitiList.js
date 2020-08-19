@@ -10,12 +10,10 @@ const SpeciesList = ({ data }) => {
       {data && data.map(item => (
         <>
           <li class="list-group-item" onClick={() => {
-
-            console.log(item)
-
             history.push({
               pathname: `${location.pathname}/details`,
               search: `query=${encodeURIComponent(item.url)}`,
+              // search: `query=${item.url}`,
             });
           }}>{ item[location.pathname === "/films" ? "title": "name"]
             }</li>

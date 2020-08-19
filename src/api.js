@@ -2,6 +2,7 @@ import { pathMap, getGeneralUrlByPath } from "./utils/pathMap"
 import {URL} from "./conts/url"
 
 export const getDataFromSrver = async (url) => {
+  console.log(url)
   return await fetch(url)
     .then(response => response.json())
 }
